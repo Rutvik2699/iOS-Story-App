@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Page5ViewController" customModule="Story_App" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life Lesson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGn-9c-dhf">
+                    <rect key="frame" x="64" y="109" width="287" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="0ci-Jj-Or3"/>
+                        <constraint firstAttribute="width" constant="287" id="76e-YU-1xA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ri8-MO-YPY">
+                    <rect key="frame" x="87" y="178" width="240" height="276"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="HMy-oX-VGk"/>
+                        <constraint firstAttribute="height" constant="276" id="JBf-5K-iIQ"/>
+                    </constraints>
+                    <string key="text">One day, Ravi took his son Raj on a village trip. He wanted to show Raj the poverty in the village. They spent time on the farm of a poor family.                                                When they returned , Ravi asked his son, "How was the trip?"                                                     "It was great dad!", Raj replied.                                                             "What did you learn from the trip?, dad enquired.                                            "We have one pet...., they have many...; they have many...; we have a pool...; they have a river...; we buy grains...,  they grow theirs...; we have lights... , </string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boy on farm.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="wfG-Pe-MUF">
+                    <rect key="frame" x="87" y="483" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="E0n-RO-JaS"/>
+                        <constraint firstAttribute="height" constant="128" id="YkB-Li-fCu"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63o-c4-XXn">
+                    <rect key="frame" x="165" y="673" width="84" height="33"/>
+                    <color key="backgroundColor" red="1" green="0.84120168449999999" blue="0.056728429240000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="bWg-EL-hhG"/>
+                        <constraint firstAttribute="width" constant="84" id="s2a-ej-lCL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Next"/>
+                    <connections>
+                        <action selector="touchUpInsideNextButton:" destination="-1" eventType="touchUpInside" id="ePt-pL-xTO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemTealColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ri8-MO-YPY" secondAttribute="trailing" constant="87" id="4S1-1j-GNi"/>
+                <constraint firstItem="ri8-MO-YPY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="87" id="CBI-ua-bYA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="63o-c4-XXn" secondAttribute="trailing" constant="165" id="Did-xg-Upc"/>
+                <constraint firstItem="63o-c4-XXn" firstAttribute="top" secondItem="wfG-Pe-MUF" secondAttribute="bottom" constant="62" id="K0F-52-bZJ"/>
+                <constraint firstItem="ri8-MO-YPY" firstAttribute="top" secondItem="hGn-9c-dhf" secondAttribute="bottom" constant="40" id="OnM-Uc-FlE"/>
+                <constraint firstItem="wfG-Pe-MUF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="87" id="bRT-2K-MnR"/>
+                <constraint firstItem="63o-c4-XXn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="165" id="cQ2-vP-1Yz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hGn-9c-dhf" secondAttribute="trailing" constant="63" id="gDO-SX-2SL"/>
+                <constraint firstItem="hGn-9c-dhf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="64" id="h6n-jm-yHo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wfG-Pe-MUF" secondAttribute="trailing" constant="87" id="tAU-Ys-L4r"/>
+                <constraint firstItem="hGn-9c-dhf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="65" id="xK9-nB-OLb"/>
+                <constraint firstItem="wfG-Pe-MUF" firstAttribute="top" secondItem="ri8-MO-YPY" secondAttribute="bottom" constant="29" id="xKk-zp-367"/>
+            </constraints>
+            <point key="canvasLocation" x="321.73913043478262" y="79.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="boy on farm.jpeg" width="216" height="233"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

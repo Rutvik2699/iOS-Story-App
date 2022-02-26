@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Page10ViewController" customModule="Story_App" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Daisy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dI-3i-nRK">
+                    <rect key="frame" x="132" y="126" width="150" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="22V-WJ-s7c"/>
+                        <constraint firstAttribute="width" constant="150" id="fca-lo-aLG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyD-Yl-YWd">
+                    <rect key="frame" x="142" y="616" width="127" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.84120168449999999" blue="0.056728429240000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="127" id="Xh7-e5-Ex4"/>
+                        <constraint firstAttribute="height" constant="40" id="zbs-rc-1Wt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Next page"/>
+                    <connections>
+                        <action selector="touchUpInsideNextButton:" destination="-1" eventType="touchUpInside" id="a6t-zR-s2v"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OVh-27-cXB">
+                    <rect key="frame" x="87" y="201" width="240" height="224"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="207" id="aHT-Bq-YKZ"/>
+                        <constraint firstAttribute="width" constant="240" id="hlZ-eF-By0"/>
+                    </constraints>
+                    <string key="text">I feel warmth from looking at the hydrated light glistening on the soft petals of the daisy. I also feel cold from observing the water droplets slowly slipping off of those same petals as they struggle to keep their grip. The daisy, once a seed, now a flower. </string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adaisy.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="V8f-U6-ius">
+                    <rect key="frame" x="87" y="456" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="gS1-hc-N6J"/>
+                        <constraint firstAttribute="width" constant="240" id="owV-Wy-6vB"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.30092651790000002" green="1" blue="0.93947854159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="dyD-Yl-YWd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="142" id="UPW-xY-LJ7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OVh-27-cXB" secondAttribute="trailing" constant="87" id="YlR-nR-iw0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7dI-3i-nRK" secondAttribute="trailing" constant="132" id="Yu3-vO-gc2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="V8f-U6-ius" secondAttribute="trailing" constant="87" id="aJs-Qd-cYd"/>
+                <constraint firstItem="V8f-U6-ius" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="87" id="ayt-Ga-hfK"/>
+                <constraint firstItem="dyD-Yl-YWd" firstAttribute="top" secondItem="V8f-U6-ius" secondAttribute="bottom" constant="32" id="bCx-Qn-oT5"/>
+                <constraint firstItem="V8f-U6-ius" firstAttribute="top" secondItem="OVh-27-cXB" secondAttribute="bottom" constant="48" id="d55-Yw-J8h"/>
+                <constraint firstItem="OVh-27-cXB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="87" id="eif-Kj-nQo"/>
+                <constraint firstItem="7dI-3i-nRK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="82" id="fYm-yv-CeK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dyD-Yl-YWd" secondAttribute="trailing" constant="145" id="g28-bZ-bSt"/>
+                <constraint firstItem="OVh-27-cXB" firstAttribute="top" secondItem="7dI-3i-nRK" secondAttribute="bottom" constant="45" id="nQZ-yt-Skh"/>
+                <constraint firstItem="7dI-3i-nRK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="132" id="nQg-gf-sB8"/>
+            </constraints>
+            <point key="canvasLocation" x="-52.173913043478265" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="adaisy.jpeg" width="259" height="194"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

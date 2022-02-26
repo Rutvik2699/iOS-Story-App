@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Page3ViewController" customModule="Story_App" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select One of the Story" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3Y-0G-vwO">
+                    <rect key="frame" x="42" y="114" width="330" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="330" id="Akf-zO-rpi"/>
+                        <constraint firstAttribute="height" constant="29" id="xuF-l6-RLd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4j9-Un-pcY">
+                    <rect key="frame" x="108" y="211" width="194" height="45"/>
+                    <color key="backgroundColor" red="0.30092651790000002" green="1" blue="0.93947854159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="194" id="8zc-vc-Cn9"/>
+                        <constraint firstAttribute="height" constant="45" id="At9-8a-BEz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Life Lesson"/>
+                    <connections>
+                        <action selector="touchUpInsideStory1:" destination="-1" eventType="touchUpInside" id="IAW-Lv-ajn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzz-k3-9Ah">
+                    <rect key="frame" x="108" y="308" width="194" height="42"/>
+                    <color key="backgroundColor" red="0.30092651790000002" green="1" blue="0.93947854159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="194" id="G5z-CF-vDD"/>
+                        <constraint firstAttribute="height" constant="42" id="fKr-zJ-pFZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Bestseller"/>
+                    <connections>
+                        <action selector="touchUpInsideStory2:" destination="-1" eventType="touchUpInside" id="Gg6-BR-1lQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bzz-k3-9Ah" secondAttribute="trailing" constant="112" id="672-qa-v8K"/>
+                <constraint firstItem="4j9-Un-pcY" firstAttribute="top" secondItem="E3Y-0G-vwO" secondAttribute="bottom" constant="68" id="EBo-zv-o5T"/>
+                <constraint firstItem="E3Y-0G-vwO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="42" id="Fxt-0Q-MGh"/>
+                <constraint firstItem="4j9-Un-pcY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="108" id="K6X-BF-bnn"/>
+                <constraint firstItem="bzz-k3-9Ah" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="108" id="MWG-Nh-Qw7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4j9-Un-pcY" secondAttribute="trailing" constant="112" id="NtQ-ed-zPf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="E3Y-0G-vwO" secondAttribute="trailing" constant="42" id="NyA-9Z-i3q"/>
+                <constraint firstItem="bzz-k3-9Ah" firstAttribute="top" secondItem="4j9-Un-pcY" secondAttribute="bottom" constant="52" id="XwD-fr-Khu"/>
+                <constraint firstItem="E3Y-0G-vwO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="jHX-wK-kAQ"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

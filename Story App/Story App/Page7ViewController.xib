@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Page7ViewController" customModule="Story_App" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bestseller, by Sandra James" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZe-YE-OJZ">
+                    <rect key="frame" x="43" y="119" width="329" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="329" id="dO5-me-dA5"/>
+                        <constraint firstAttribute="height" constant="53" id="qqI-Ob-29R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R0f-HF-8YE">
+                    <rect key="frame" x="89" y="188" width="240" height="365"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="CHk-fl-ZOJ"/>
+                        <constraint firstAttribute="height" constant="365" id="Owb-FD-PmY"/>
+                    </constraints>
+                    <string key="text">There I am checking stats on my Amazon account. My Novel is an overnight sensation.                               Sasles rival JK Rowling's success. All my hard work. All those hours and hourse, week of editing... requited.                                       I check my emails. Hundreds, several from prominent publishers. The same publishers who rejected my efforts, many time over before I decided to self-publish. WHich one will I forgive?                            Is that my ringtone? Another eager publisher?                                              Alas, it's my alarm telling me to hurry and get ready for my real job.                                                     I check my stats. One sale. My first sale. Watch out JK!</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happywriter.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="DWa-Ch-2kC">
+                    <rect key="frame" x="87" y="594" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="C0D-rn-EZq"/>
+                        <constraint firstAttribute="width" constant="240" id="UAd-2q-2EB"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.30092651790000002" green="1" blue="0.93947854159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="R0f-HF-8YE" firstAttribute="top" secondItem="MZe-YE-OJZ" secondAttribute="bottom" constant="16" id="3hf-l1-HRb"/>
+                <constraint firstItem="DWa-Ch-2kC" firstAttribute="top" secondItem="R0f-HF-8YE" secondAttribute="bottom" constant="41" id="Afm-sv-why"/>
+                <constraint firstItem="R0f-HF-8YE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="89" id="Gt4-cu-QsT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DWa-Ch-2kC" secondAttribute="trailing" constant="87" id="Ipw-Ou-4AL"/>
+                <constraint firstItem="MZe-YE-OJZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="43" id="Of6-QZ-lId"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MZe-YE-OJZ" secondAttribute="trailing" constant="42" id="PNv-G4-8po"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="R0f-HF-8YE" secondAttribute="trailing" constant="85" id="SfG-Z1-7Or"/>
+                <constraint firstItem="MZe-YE-OJZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="75" id="jph-ku-337"/>
+                <constraint firstItem="DWa-Ch-2kC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="87" id="yeW-Ih-yMP"/>
+            </constraints>
+            <point key="canvasLocation" x="363.768115942029" y="141.96428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="happywriter.jpeg" width="274" height="184"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
